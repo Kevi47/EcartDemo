@@ -1,0 +1,28 @@
+.userdetails {
+  margin-top: 18px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  .login {
+    width: 180px;
+  }
+  .btn {
+    background-color: transparent;
+    color:  rgb(202, 184, 84);
+    margin-top: 8px;
+    border-radius: 8px;
+    border-style:double;
+    border-color: rgb(228, 217, 156);
+  }
+
+  .btn:hover {
+    border-style:groove;
+   border-color: rgb(228, 217, 156);
+    cursor: pointer;
+  }
+  .acc {
+    margin-top: 8px;
+    color: rgb(202, 184, 84);
+  }
+}

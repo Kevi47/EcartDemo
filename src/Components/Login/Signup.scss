@@ -1,0 +1,30 @@
+.userdetails {
+  margin-top: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  height: 100%;
+  .login {
+    width: 180px;
+  }
+  .signup {
+    width: 180px;
+  }
+  .input {
+    margin-top: 8px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    border-style: hidden;
+    background-color: lightgray;
+    padding: 10px;
+  }
+  .input:focus {
+    border-style: groove;
+    outline-color: goldenrod;
+  }
+  .input::-webkit-inner-spin-button,
+  input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
+}

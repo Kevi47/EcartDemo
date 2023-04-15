@@ -1,0 +1,122 @@
+.maincart {
+  margin-top: 50px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  .cartdetails {
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    border-radius: 10px;
+  }
+  .cimg {
+    height: 130px;
+    display: flex;
+    border-radius: 5px;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  .header4 {
+    margin-top: 3px;
+  }
+  .cartimg {
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+  .price {
+    display: flex;
+  }
+  .textC {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .btn1 {
+    margin: 3px;
+    background-color: black;
+    text-decoration: none;
+    color: rgb(202, 184, 84);
+    text-align: center;
+    font-size: 12px;
+    border-radius: 8px;
+    border-style: double;
+    border-color: rgb(228, 217, 156);
+    width: 35px;
+    height: 30px;
+  }
+  .btn3 {
+    background-color: black;
+    text-decoration: none;
+    color: rgb(202, 184, 84);
+    font-size: 12px;
+    border-radius: 8px;
+    border-style: double;
+    border-color: rgb(228, 217, 156);
+    width: 65px;
+    height: 30px;
+  }
+  .cartdes {
+    margin-left: 10px;
+    padding-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(227, 224, 197);
+    border-radius: 10px;
+    width: 150%;
+    margin-top: 10px;
+  }
+  .carti {
+    width: 20px;
+    text-align: center;
+  }
+  .header3 {
+    color: rgb(36, 190, 36);
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 8px;
+  }
+  .header1 {
+    color: grey;
+    text-decoration: line-through;
+    margin-top: 5px;
+    margin-left: 8px;
+  }
+  .loop {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .header2 {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  .header5 {
+    margin-top: 6px;
+  }
+  .priceblock {
+    background-color: rgb(227, 227, 227);
+    margin-left: 5%;
+    border-radius: 10px;
+    padding: 5px;
+    width: 20%;
+    height: 160px;
+    color: rgb(18, 18, 18);
+    position: sticky;
+    top: 80px;
+  }
+  .ch1,
+  .ch2,
+  .ch3,
+  .ch4 {
+    margin-top: 12px;
+  }
+  .ch1 {
+    display: flex;
+    justify-content: center;
+  }
+  .ch4 {
+    color: rgb(7, 181, 36);
+  }
+}

@@ -1,0 +1,78 @@
+.mainbox {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 100%;
+ 
+
+  .listpro {
+    border-color: rgb(234, 234, 234);
+    margin-top: 10px;
+    display: grid;
+    border-style: solid;
+    width: auto;
+    max-width: 100%;
+    height: 300px;
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: white;
+  }
+  .listpro:hover {
+    transform: scale(1.01);
+  }
+  #pname {
+    width: 200px;
+    margin-left: 10px;
+  }
+  #img1 {
+    margin-top: 5px;
+    width: 100%;
+    height: 180px;
+  }
+  #mrpcss {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .header1,
+    .header2,
+    .header3 {
+      margin-left: 8px;
+    }
+    .header3 {
+      color: rgb(36, 190, 36);
+      font-size: 14px;
+    }
+    .header1 {
+      color: grey;
+      text-decoration: line-through;
+    }
+    .header2 {
+      font-size: 15px;
+    }
+  }
+  #btndiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #btncart {
+    background-color: rgb(8, 8, 8);
+    color: white;
+    width: 90px;
+    height: 20px;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  #btncart:hover {
+    cursor: pointer;
+    background-color: rgb(42, 42, 42);
+  }
+  
+  .image {
+    width:98.5%;
+  }
+
+
+}
