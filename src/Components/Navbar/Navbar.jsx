@@ -1,4 +1,4 @@
-import { Catagory, Main, Nopage, Loginpage, MasterCart } from "../Combonents";
+import { Catagory, Main, Nopage, Loginpage,Banner, MasterCart } from "../Combonents";
 import { BrowserRouter as Router, Routes, Link, Route } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { counterchange, userChange } from "../../Redux/Commonstates";
@@ -53,7 +53,7 @@ function Navbar() {
           </Link>
         </div>
         <Routes>
-          <Route index element={<Main />} />
+          <Route index element={<Banner />} />
           <Route exact path="electronics" element={<Catagory />} />
           <Route exact path="cart" element={<MasterCart />} />
           <Route exact path="login" element={<Loginpage />} />
