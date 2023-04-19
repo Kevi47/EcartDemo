@@ -1,4 +1,4 @@
-import { Navbar } from "./Components/Combonents";
+import { Navbar} from "./Components/Combonents";
 
 import "./App.scss";
 function App() {
