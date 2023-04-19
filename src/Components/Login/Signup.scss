@@ -23,8 +23,26 @@
     border-style: groove;
     outline-color: goldenrod;
   }
+
+  .nalert {
+    margin-top: 8px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    border-style:solid;
+    border-color: red;
+    background-color: lightgray;
+    padding: 10px;
+  }
+  .nalert:focus {
+    border-style: groove;
+    outline-color: goldenrod;
+  }
   .input::-webkit-inner-spin-button,
   input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
+  .nalert::-webkit-inner-spin-button,
+  nalert::-webkit-outer-spin-button {
     -webkit-appearance: none;
   }
 }

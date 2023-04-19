@@ -2,26 +2,38 @@
   background-color: rgb(14, 6, 16);
   height: 40px;
   padding-top: 10px;
-  position:fixed;
+  position: fixed;
   width: 100%;
-  .links{
+  .links {
     color: rgb(202, 184, 84);
     text-decoration: none;
     padding-left: 40px;
     font-weight: bolder;
   }
-  .loginlink{
-    color:  rgb(202, 184, 84);
+  #btnout {
+    color: rgb(202, 184, 84);
+    background-color: black;
+    display: flex;
+    font-size: smaller;
+    margin-top: 1px;
+    border-color:  rgb(202, 184, 84);
+border-radius: 4px;
+  }
+  #btnout:hover {
+    cursor: pointer;
+  }
+  .loginlink {
+    color: rgb(202, 184, 84);
     text-decoration: none;
     text-decoration: none;
     padding-right: 20px;
     float: right;
     font-weight: bolder;
   }
-  .loginlink:hover{
-   color:  rgb(228, 217, 156);
-  }
-  .links:hover{
+  .loginlink:hover {
     color: rgb(228, 217, 156);
-   }
+  }
+  .links:hover {
+    color: rgb(228, 217, 156);
+  }
 }

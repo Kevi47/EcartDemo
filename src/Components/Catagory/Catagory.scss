@@ -1,6 +1,8 @@
 .catagory{  
     padding-top: 50px;
     background-color: rgb(225, 225, 225);
+    display: flex;
+    flex-wrap: wrap;
     .image1{
 width: 100%;
 height: 400px;

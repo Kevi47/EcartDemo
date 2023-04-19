@@ -3,38 +3,34 @@ import { useDispatch } from "react-redux";
 import { cartFlag, counterchange, userChange } from "../../Redux/Commonstates";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { useState } from "react";
-import { signOut } from "firebase/auth";
 import { auth } from "../../Configuration/Firebase";
 
-
 function Login() {
-
   const [uname, setuname] = useState("@gmail.com");
   const [upass, setupass] = useState("");
+  const [uerror, setuerror] = useState("");
 
   const signcheck = async () => {
     signInWithEmailAndPassword(auth, uname, upass)
       .then((useCredential) => {
         console.log(useCredential);
         dispatch(userChange(auth?.currentUser?.email));
-        dispatch(counterchange(2))
+        dispatch(counterchange(2));
+        setuerror("")
       })
       .catch((err) => {
-        console.error(err, "Login Error");
+        if (err.code == "auth/invalid-email"||err.code == "auth/user-not-found") {
+          console.error(err.code, "Mail Error");
+          setuerror("Invalid Mail")
+        } if(err.code == "auth/wrong-password") {
+          console.error(err.code, "Password Error");
+          setuerror("Wrong Password")
+        }
       });
   };
 
   const dispatch = useDispatch();
 
-  const logoutuser = async () => {
-    try {
-      await signOut(auth);
-      dispatch(userChange("undefined"));
-      console.log(auth?.currentUser?.email);
-    } catch (err) {
-      console.error(err);
-    }
-  };
   return (
     <div className="userdetails">
       <div className="login">
@@ -51,15 +47,19 @@ function Login() {
           className="input"
           placeholder="Password"
         ></input>
+             <h2 id="error">{uerror}</h2>
         <button className="btn" onClick={() => signcheck()}>
           Login
         </button>
         <h5 className="acc">Don't have account?</h5>
-        <button className="btn" onClick={() => {dispatch(counterchange(3));dispatch(cartFlag())}}>
+        <button
+          className="btn"
+          onClick={() => {
+            dispatch(counterchange(3));
+            dispatch(cartFlag());
+          }}
+        >
           Sign In
-        </button>
-        <button className="btn" onClick={() => logoutuser()}>
-          Log Out
         </button>
       </div>
     </div>

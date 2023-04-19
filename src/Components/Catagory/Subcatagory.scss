@@ -1,11 +1,7 @@
 .mainbox {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 10px;
-  margin-left: 10px;
-  width: 100%;
- 
-
+  justify-content: center;
   .listpro {
     border-color: rgb(234, 234, 234);
     margin-top: 10px;
@@ -19,7 +15,7 @@
     background-color: white;
   }
   .listpro:hover {
-    transform: scale(1.01);
+    border-color: rgb(114, 113, 113);
   }
   #pname {
     width: 200px;
@@ -52,7 +48,7 @@
       font-size: 15px;
     }
   }
-  #btndiv{
+  #btndiv {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,10 +65,4 @@
     cursor: pointer;
     background-color: rgb(42, 42, 42);
   }
-  
-  .image {
-    width:98.5%;
-  }
-
-
 }

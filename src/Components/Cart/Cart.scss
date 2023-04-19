@@ -46,6 +46,10 @@
     width: 35px;
     height: 30px;
   }
+  .btn1,.btn3:hover{
+    cursor: pointer;
+    color: rgb(236, 225, 167);
+  }
   .btn3 {
     background-color: black;
     text-decoration: none;
@@ -94,29 +98,5 @@
   }
   .header5 {
     margin-top: 6px;
-  }
-  .priceblock {
-    background-color: rgb(227, 227, 227);
-    margin-left: 5%;
-    border-radius: 10px;
-    padding: 5px;
-    width: 20%;
-    height: 160px;
-    color: rgb(18, 18, 18);
-    position: sticky;
-    top: 80px;
-  }
-  .ch1,
-  .ch2,
-  .ch3,
-  .ch4 {
-    margin-top: 12px;
-  }
-  .ch1 {
-    display: flex;
-    justify-content: center;
-  }
-  .ch4 {
-    color: rgb(7, 181, 36);
   }
 }

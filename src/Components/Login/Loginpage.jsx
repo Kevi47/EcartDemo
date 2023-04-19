@@ -4,7 +4,6 @@ import "./Loginpage.scss";
 import { useSelector } from "react-redux";
 function Loginpage() {
   const {counter} = useSelector((state) => state.signup);
-  console.log(counter)
   return (
     <div className="block">
    {counter==3? <Signup/> : <Login/>}

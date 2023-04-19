@@ -16,12 +16,10 @@ function Catagory() {
       try {
         const data = await getDocs(mobile);
         setitems(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
-        console.log(items, "Item State");
       } catch (err) {
         console.error(err, "wrong");
       }
     };
-    console.log(pro, "product new array");
     getMobile();
   }, []);
   dispatch(productPush(items));

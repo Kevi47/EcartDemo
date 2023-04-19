@@ -10,7 +10,6 @@ function Subcatagory() {
   const dispatch = useDispatch();
   const addCart = async (prod) => {
     dispatch(cartFlag());
-    console.log(cartLog, "log");
     if (counter == 2) {
       const userRef = doc(
         db,
@@ -27,14 +26,12 @@ function Subcatagory() {
         alert(err);
       }
     } else {
-      console.log("should login in", counter);
       alert("Please Login To Add Items In Cart");
     }
   };
   const { pro } = useSelector((state) => state.productD);
   const { counter } = useSelector((state) => state.signup);
   const { cartLog } = useSelector((state) => state.signup);
-  console.log(pro, "in sub component");
   return (
     <div className="mainbox">
       <img
