@@ -75,7 +75,7 @@ function Navbar() {
           </Link> 
         </div>
         <Routes>
-          <Route index element={<Main />} />
+          <Route exact path="/" element={<Main />} />
           <Route exact path="electronics" element={<Catagory />} />
           <Route exact path="cart" element={<MasterCart />} />
           <Route exact path="login" element={<Loginpage />} />
