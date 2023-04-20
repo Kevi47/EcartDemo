@@ -6,7 +6,7 @@ import { useState } from "react";
 import { auth } from "../../Configuration/Firebase";
 
 function Login() {
-  const [uname, setuname] = useState("@gmail.com");
+  const [uname, setuname] = useState("");
   const [upass, setupass] = useState("");
   const [uerror, setuerror] = useState("");
 

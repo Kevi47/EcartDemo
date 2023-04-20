@@ -58,7 +58,7 @@ function Signup() {
   const dispatch = useDispatch();
   const [fullname, setfullname] = useState("");
   const [uphno, setuphno] = useState("");
-  const [uemail, setuemail] = useState("@gmail.com");
+  const [uemail, setuemail] = useState("");
   const [upass, setupass] = useState("");
   const [ucpass, setucpass] = useState("");
 
