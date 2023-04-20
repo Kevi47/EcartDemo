@@ -1,6 +1,6 @@
 
 import { Catagory, Main, Nopage, Loginpage, MasterCart } from "../Combonents";
-import { BrowserRouter as Router, Routes, Link, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Link, Route } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { counterchange, userChange } from "../../Redux/Commonstates";
 import { collection, getDocs } from "firebase/firestore";
