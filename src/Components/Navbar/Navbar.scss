@@ -14,13 +14,15 @@
     color: rgb(202, 184, 84);
     background-color: black;
     display: flex;
-    font-size: smaller;
+    font-size: 9px;
     margin-top: 1px;
-    border-color:  rgb(202, 184, 84);
-border-radius: 4px;
+    border-color: rgb(202, 184, 84);
+    border-radius: 4px;
+    border-width: 1px;
   }
   #btnout:hover {
     cursor: pointer;
+    color: rgb(218, 210, 160);
   }
   .loginlink {
     color: rgb(202, 184, 84);
