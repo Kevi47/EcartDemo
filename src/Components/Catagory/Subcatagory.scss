@@ -7,8 +7,7 @@
     margin-top: 10px;
     display: grid;
     border-style: solid;
-    width: auto;
-    max-width: 100%;
+    width: 17%;
     height: 300px;
     margin-left: 10px;
     border-radius: 10px;
@@ -23,8 +22,11 @@
   }
   #img1 {
     margin-top: 5px;
-    width: 100%;
+    width: 99%;
     height: 180px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    
   }
   #mrpcss {
     margin-top: 20px;
